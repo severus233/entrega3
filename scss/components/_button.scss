@@ -1,0 +1,36 @@
+button{
+    padding: 20px;
+    text-align: center;
+    font-weight: 600;
+    margin-top: 10px;
+    border: solid 3px rgb(9, 9, 9);
+    &:hover{
+        color: gray;
+    }
+}
+/**Main-Banner**/
+button{
+    margin-top: 10px;
+    background: rgba(51,51,51, 0.5);
+    padding: 20px;
+    color: aliceblue;
+    font-size: 16px;
+    border: solid 3px white;        
+    
+    &:hover {
+        color: rgb(167, 167, 167);
+    }  
+}
+.btn{
+    width: 100%;
+    height: 45px;
+    background: rgb(0, 0, 0);
+    color: #fffcfc;
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    box-shadow: 0 0 5px rgb(38, 38, 38);
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 600;
+}

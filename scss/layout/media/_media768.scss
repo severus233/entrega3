@@ -1,0 +1,46 @@
+@media(max-width:48rem){
+    header{
+        flex-direction: column;
+        align-items: center;
+    }
+    .logotop{
+        margin-top: 20px;
+        margin-right: 50px;
+        
+        font-size: 42px;
+        padding: 10px;
+    }
+    .navbar {
+            width: 100%;
+             flex-direction: column;
+             align-items: center;     
+             margin-bottom: 20px;  
+             gap: 12px;
+             a{
+                font-size: 28px;
+             }        
+    }
+    .contenedor-cards{
+        height: 350px;
+    }
+    .card-info{
+        h3{
+            font-size: 22px;
+        }
+    }
+    .nutri1{
+        h1{
+            font-size: 36px;
+        }
+        p{
+            padding: 20px;
+            font-size: 28px;
+        }
+    }
+}
+.social{
+
+    margin-right: 30px;
+    img {height: 40px;}
+
+}

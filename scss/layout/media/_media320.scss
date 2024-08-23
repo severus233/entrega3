@@ -1,0 +1,150 @@
+@media(max-width:20rem){
+    header{
+        width: 100%;
+        border: none;
+        background-color: #fbf8f8d7;
+    }
+.main-banner{
+    height: 500px;
+    margin: 0px;
+    background-image: url(../assets/imgs/chica.jpg);
+    background-size: cover;
+    img{
+        display: none;
+    }
+}
+.titulo-index{
+    
+    h1{
+        font-size: 22px;
+        margin-bottom: 10px;
+        font-weight: 900;
+    }
+    p{
+        font-size: 16px;
+    }
+}
+       
+   .galeria-main{
+    display: flex;
+    flex-direction: column;
+    padding: 0px;
+    margin: 0;
+   }
+   .gal-main{
+    margin: 10px;
+    h3{
+        font-size: 22px;
+    }
+    &:nth-child(2){
+        margin: 0px;
+    }
+    &:nth-child(3){
+        margin: 0px;
+    }
+    &:nth-child(4){
+        margin: 0px;
+    }
+    &:nth-child(5){
+        margin: 0px;
+    }
+   }
+   .contenedor-cards{
+    flex-direction: column;
+    margin: auto;
+    height: auto;
+    border: none;
+    img{
+        object-fit: contain;
+    }
+}
+.nosotros-main{
+    margin: 0;
+    background-color: #000000;
+}
+.galeria-conteiner{
+    display: flex;
+    flex-direction: column;
+    background-color: #000000;
+    
+   }
+.nutri1{
+    margin: 0;
+    background-color: #000000;
+    h1{
+        font-size: 32px;
+        margin-top: 10px;
+        color: #ffffff;
+    }
+    p{
+      font-size:  22px;
+      margin-top: 5px;
+      color: #faefef;
+    }
+   }
+   .titulo-ofertas{
+    border: none;
+   }
+   .beneficios-main{
+    margin: 0px;
+   }
+   .beneficios-principal{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    width: 100%;
+  
+    div{
+        border-bottom: solid 2px black;
+        grid-column-start: span 2;
+        h1{
+            font-size: 22px;
+            text-align: center;
+        }
+        p{
+            font-size: 18px;
+        }
+    }
+   }
+   .beneficiosimg{
+    display: flex;
+    flex-direction: column;
+    filter: brightness(90%);
+   }
+   .texto1{
+   bottom: 20%;
+   width: 250px;
+   height: 130px;
+    h2{
+        font-size: 24px;
+        color: #ffffff;
+    }
+    p{
+        font-weight: 600;
+        font-size: 24px;
+        color: #ffffff;
+    }
+   }
+   .nosotros-galeria{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 0px;
+   }
+   .banner-sub{
+    padding: 0px;
+   }
+   .titulo-sub{
+    left: 30px;
+    h1{
+        font-size: 32px;
+    }
+   }
+   .contenedor-subs{
+    flex-direction: column;
+   }
+   
+
+
+    .social{
+        display: none;
+    }   
+    }

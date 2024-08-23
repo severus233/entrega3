@@ -3,10 +3,16 @@
   padding: 0;
   box-sizing: border-box; }
 
+a {
+  text-decoration: none; }
+
+@font-face {
+  font-family: Jakarta;
+  src: url("../assets/imgs/fonts/JakartaSans1.ttf"); }
+
 header {
   display: flex;
   width: 100%;
-  height: 100px;
   justify-content: space-between;
   align-items: center;
   background-color: #fbf8f8d7;
@@ -25,18 +31,16 @@ header {
   .logotop img {
     height: 100px;
     vertical-align: middle;
-    border-color: black;
     padding: 10px; }
 
 .navbar {
   display: flex;
   vertical-align: middle;
-  gap: 1.25rem;
+  gap: 1.875rem;
   margin-right: 50px; }
   .navbar li {
     list-style: none; }
   .navbar a {
-    text-decoration: none;
     color: black;
     font-size: 22px; }
     .navbar a:hover {
@@ -63,15 +67,6 @@ header {
   .titulo-index p {
     font-size: 22px;
     color: #fffcfc; }
-  .titulo-index button {
-    margin-top: 10px;
-    background: rgba(51, 51, 51, 0.5);
-    padding: 20px;
-    color: aliceblue;
-    font-size: 16px;
-    border: solid 3px white; }
-    .titulo-index button:hover {
-      color: #a7a7a7; }
 
 .galeria-main {
   display: grid;
@@ -131,14 +126,13 @@ header {
   justify-content: space-evenly;
   width: 100%;
   height: 500px;
-  background-color: #110f0f;
   border: solid 2px silver; }
   .contenedor-cards img {
     width: 100%;
     height: 200px; }
 
 .card {
-  border: solid 3px white;
+  border: solid 3px #050505;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -149,46 +143,15 @@ header {
     height: 80%; }
 
 .card-info {
-  text-align: center; }
+  text-align: center;
+  color: #000000; }
   .card-info h3 {
     font-size: 28px;
-    color: #e9d776;
     font-weight: 600; }
+    .card-info h3:hover {
+      color: #ababab; }
   .card-info p {
-    color: aliceblue;
     font-size: 20px; }
-
-.beneficios-main {
-  display: flex;
-  justify-content: center; }
-
-.beneficios-principal div {
-  text-align: center;
-  padding: 10px;
-  margin-top: 15px; }
-  .beneficios-principal div h1 {
-    font-size: 52px;
-    font-weight: 1200;
-    justify-self: center;
-    gap: 10px; }
-  .beneficios-principal div p {
-    font-size: 22px;
-    margin-top: 15px; }
-
-.beneficiosimg {
-  display: flex;
-  height: 500px;
-  justify-content: space-around; }
-
-.texto1 {
-  border: solid 3px black;
-  color: aliceblue;
-  position: absolute;
-  bottom: 15px; }
-  .texto1 h2 {
-    font-size: 40px;
-    font-weight: 1200;
-    font-family: Georgia, 'Times New Roman', Times, serif; }
 
 .nosotros-main {
   display: flex;
@@ -216,9 +179,6 @@ header {
   .nutri1 p {
     font-size: 32px;
     margin-top: 20px; }
-
-.nosotros-2 {
-  background-color: #110f0f; }
 
 .titulo-ofertas {
   display: flex;
@@ -254,6 +214,59 @@ header {
 .gal-1:nth-child(5) {
   grid-column-start: span 3; }
 
+.beneficios-principal div {
+  justify-content: center;
+  text-align: center;
+  padding: 10px;
+  margin-top: 15px; }
+  .beneficios-principal div h1 {
+    font-size: 52px;
+    font-weight: 1200;
+    justify-self: center;
+    gap: 10px; }
+  .beneficios-principal div p {
+    font-size: 22px;
+    margin-top: 15px; }
+
+.beneficiosimg {
+  display: flex;
+  height: 500px;
+  justify-content: space-around; }
+
+.texto1 {
+  border: solid 3px black;
+  color: aliceblue;
+  position: absolute;
+  bottom: 15px; }
+  .texto1 h2 {
+    font-size: 40px;
+    font-weight: 1200;
+    font-family: Georgia, 'Times New Roman', Times, serif; }
+
+.nosotros-galeria {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: 300px;
+  grid-gap: 30px;
+  padding: 20px;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  border-top: solid 3px black; }
+
+.nos-gal {
+  color: #000000;
+  text-align: center; }
+  .nos-gal h3 {
+    margin-top: 10px;
+    font-size: 32px; }
+    .nos-gal h3:hover {
+      color: #ababab; }
+
+.nos-gal-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; }
+
 .banner-sub {
   width: 100%;
   background-color: #fffcfc;
@@ -278,16 +291,6 @@ header {
     font-size: 16px;
     font-weight: 300;
     color: aliceblue; }
-  .titulo-sub button {
-    padding: 20px;
-    margin-top: 10px;
-    background: rgba(51, 51, 51, 0.5);
-    color: #fffefe;
-    font-size: 16px;
-    border: solid 3px #fcfbfb;
-    font-weight: 600; }
-    .titulo-sub button:hover {
-      color: #b8b5b5; }
 
 .planes-1 {
   text-align: center; }
@@ -310,14 +313,6 @@ header {
   .gal-2 img {
     width: 100%;
     border: solid 2px #110f0f; }
-  .gal-2 button {
-    padding: 20px;
-    text-align: center;
-    font-weight: 600;
-    margin-top: 10px;
-    border: solid 3px black; }
-    .gal-2 button:hover {
-      color: gray; }
 
 .sesion-main {
   display: flex;
@@ -326,12 +321,13 @@ header {
   min-height: 50vh;
   background: url(../assets/imgs/inses-1.jpg) no-repeat;
   background-position: center;
+  filter: brightness(90%);
   background-size: cover; }
 
 .inicio-sesion {
   width: 500px;
   background: transparent;
-  border: solid 1px #d0cece;
+  border: solid 1px white;
   border-radius: 20px;
   padding: 30px 40px;
   margin: 40px 40px; }
@@ -350,43 +346,30 @@ header {
     width: 100%;
     height: 100%;
     font-size: 18px;
-    color: black;
+    color: white;
     padding: 20px 45px 20px 20px;
     background: transparent;
     border: none;
-    border: solid 2px #abaaaa;
+    border: solid 2px #efecec;
     border-radius: 40px;
     outline: none; }
     .inicio-cuadro input ::placeholder {
-      color: #000000; }
+      color: #ffffff; }
 
 .olv-pass {
   display: flex;
   justify-content: space-between;
-  font-size: 14px;
+  font-size: 18px;
   margin: -15px 0 15px; }
   .olv-pass label input {
     accent-color: white;
     margin-right: 3px; }
   .olv-pass a {
-    color: #110f0f;
+    color: #faefef;
     font-weight: 900;
     text-decoration: none; }
     .olv-pass a:hover {
       text-decoration: underline; }
-
-.btn {
-  width: 100%;
-  height: 45px;
-  background: black;
-  color: #fffcfc;
-  border: none;
-  outline: none;
-  border-radius: 40px;
-  box-shadow: 0 0 5px #262626;
-  cursor: pointer;
-  font-size: 16px;
-  font-weight: 600; }
 
 .link-registro {
   text-align: center;
@@ -423,7 +406,176 @@ header {
   display: flex;
   gap: 20px;
   margin-right: 15px; }
-  .social a {
-    text-decoration: none; }
   .social img {
     height: 60px; }
+
+button {
+  padding: 20px;
+  text-align: center;
+  font-weight: 600;
+  margin-top: 10px;
+  border: solid 3px #090909; }
+  button:hover {
+    color: gray; }
+
+/**Main-Banner**/
+button {
+  margin-top: 10px;
+  background: rgba(51, 51, 51, 0.5);
+  padding: 20px;
+  color: aliceblue;
+  font-size: 16px;
+  border: solid 3px white; }
+  button:hover {
+    color: #a7a7a7; }
+
+.btn {
+  width: 100%;
+  height: 45px;
+  background: black;
+  color: #fffcfc;
+  border: none;
+  outline: none;
+  border-radius: 40px;
+  box-shadow: 0 0 5px #262626;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 600; }
+
+@media (max-width: 48rem) {
+  header {
+    flex-direction: column;
+    align-items: center; }
+  .logotop {
+    margin-top: 20px;
+    margin-right: 50px;
+    font-size: 42px;
+    padding: 10px; }
+  .navbar {
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+    gap: 12px; }
+    .navbar a {
+      font-size: 28px; }
+  .contenedor-cards {
+    height: 350px; }
+  .card-info h3 {
+    font-size: 22px; }
+  .nutri1 h1 {
+    font-size: 36px; }
+  .nutri1 p {
+    padding: 20px;
+    font-size: 28px; } }
+
+.social {
+  margin-right: 30px; }
+  .social img {
+    height: 40px; }
+
+@media (max-width: 20rem) {
+  header {
+    width: 100%;
+    border: none;
+    background-color: #fbf8f8d7; }
+  .main-banner {
+    height: 500px;
+    margin: 0px;
+    background-image: url(../assets/imgs/chica.jpg);
+    background-size: cover; }
+    .main-banner img {
+      display: none; }
+  .titulo-index h1 {
+    font-size: 22px;
+    margin-bottom: 10px;
+    font-weight: 900; }
+  .titulo-index p {
+    font-size: 16px; }
+  .galeria-main {
+    display: flex;
+    flex-direction: column;
+    padding: 0px;
+    margin: 0; }
+  .gal-main {
+    margin: 10px; }
+    .gal-main h3 {
+      font-size: 22px; }
+    .gal-main:nth-child(2) {
+      margin: 0px; }
+    .gal-main:nth-child(3) {
+      margin: 0px; }
+    .gal-main:nth-child(4) {
+      margin: 0px; }
+    .gal-main:nth-child(5) {
+      margin: 0px; }
+  .contenedor-cards {
+    flex-direction: column;
+    margin: auto;
+    height: auto;
+    border: none; }
+    .contenedor-cards img {
+      object-fit: contain; }
+  .nosotros-main {
+    margin: 0;
+    background-color: #000000; }
+  .galeria-conteiner {
+    display: flex;
+    flex-direction: column;
+    background-color: #000000; }
+  .nutri1 {
+    margin: 0;
+    background-color: #000000; }
+    .nutri1 h1 {
+      font-size: 32px;
+      margin-top: 10px;
+      color: #ffffff; }
+    .nutri1 p {
+      font-size: 22px;
+      margin-top: 5px;
+      color: #faefef; }
+  .titulo-ofertas {
+    border: none; }
+  .beneficios-main {
+    margin: 0px; }
+  .beneficios-principal {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: 100%; }
+    .beneficios-principal div {
+      border-bottom: solid 2px black;
+      grid-column-start: span 2; }
+      .beneficios-principal div h1 {
+        font-size: 22px;
+        text-align: center; }
+      .beneficios-principal div p {
+        font-size: 18px; }
+  .beneficiosimg {
+    display: flex;
+    flex-direction: column;
+    filter: brightness(90%); }
+  .texto1 {
+    bottom: 20%;
+    width: 250px;
+    height: 130px; }
+    .texto1 h2 {
+      font-size: 24px;
+      color: #ffffff; }
+    .texto1 p {
+      font-weight: 600;
+      font-size: 24px;
+      color: #ffffff; }
+  .nosotros-galeria {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 0px; }
+  .banner-sub {
+    padding: 0px; }
+  .titulo-sub {
+    left: 30px; }
+    .titulo-sub h1 {
+      font-size: 32px; }
+  .contenedor-subs {
+    flex-direction: column; }
+  .social {
+    display: none; } }
