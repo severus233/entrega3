@@ -1,10 +1,8 @@
 .footer{
+    @include flex;
     height: 150px;
     width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #110f0f;
+    background-color: $colorSecundario;
 }
 .logofooter{
     display: flex;

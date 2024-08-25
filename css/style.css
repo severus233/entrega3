@@ -6,22 +6,34 @@
 a {
   text-decoration: none; }
 
+h1 {
+  font-family: "RalewayItalic"; }
+
 @font-face {
-  font-family: Jakarta;
+  font-family: "Jakarta";
   src: url("../assets/imgs/fonts/JakartaSans1.ttf"); }
+
+@font-face {
+  font-family: "RalewayItalic";
+  src: url(../assets/imgs/fonts/Ralewayitalic.ttf); }
+
+@font-face {
+  font-family: "rusila";
+  src: url("../assets/imgs/fonts/Rusillaserif-Light.ttf"); }
 
 header {
   display: flex;
-  width: 100%;
+  flex-wrap: nowrap;
   justify-content: space-between;
   align-items: center;
+  width: 100%;
   background-color: #fbf8f8d7;
   border-bottom: 2px solid black; }
 
 .logotop {
   display: flex;
   text-decoration: none;
-  font-size: 22px;
+  font-size: 28px;
   gap: 10px;
   font-weight: 900;
   align-items: center;
@@ -269,7 +281,7 @@ header {
 
 .banner-sub {
   width: 100%;
-  background-color: #fffcfc;
+  background-color: white;
   position: relative;
   padding: 20px 50px 0px 50px; }
   .banner-sub img {
@@ -290,7 +302,7 @@ header {
   .titulo-sub p {
     font-size: 16px;
     font-weight: 300;
-    color: aliceblue; }
+    color: white; }
 
 .planes-1 {
   text-align: center; }
@@ -308,11 +320,13 @@ header {
 
 .gal-2 {
   width: 100%;
-  flex-direction: row;
-  text-align: center; }
+  flex-direction: row; }
   .gal-2 img {
     width: 100%;
     border: solid 2px #110f0f; }
+  .gal-2 h3 {
+    text-align: center;
+    font-weight: 900; }
 
 .sesion-main {
   display: flex;
@@ -354,7 +368,7 @@ header {
     border-radius: 40px;
     outline: none; }
     .inicio-cuadro input ::placeholder {
-      color: #ffffff; }
+      color: #030303; }
 
 .olv-pass {
   display: flex;
@@ -383,12 +397,13 @@ header {
       text-decoration: underline; }
 
 .footer {
-  height: 150px;
-  width: 100%;
   display: flex;
+  flex-wrap: nowrap;
   justify-content: space-between;
   align-items: center;
-  background-color: #110f0f; }
+  height: 150px;
+  width: 100%;
+  background-color: black; }
 
 .logofooter {
   display: flex;
